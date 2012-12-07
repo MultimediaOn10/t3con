@@ -4,11 +4,14 @@
     
 class Test extends AppModel {
     
+
     public $name = 'Test';
-    /*
+    public $validate =array();
+    
+    
     public function getElements ($condition){
     
-        $all=  $this->Navigation->find('select', array(
+        find('select', array(
         'conditions' => array('presentations' => $condition), //array of conditions
       //  'recursive' => 1, //int
         'fields' => array('presentations', 'type', 'discription'), //array of field names
@@ -21,6 +24,6 @@ class Test extends AppModel {
         ));
     
         return $all;
-    }*/
+    }
 }
 ?>
