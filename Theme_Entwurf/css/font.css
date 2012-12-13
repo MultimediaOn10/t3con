@@ -1,0 +1,15 @@
+.track{
+	font-family: Helvetica;
+	
+}
+.track-title{
+	font-size: 13px;
+	font-style: 
+}
+.track-speaker{
+	font-weight: lighter;
+	font-size: 10px;
+	float: right;
+	padding-bottom: 3px;
+	padding-right: 3px;
+}
