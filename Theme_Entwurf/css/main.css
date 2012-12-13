@@ -56,7 +56,6 @@ body {
 
 .content-heading {
 	background: #757776;
-	font-family: Share,Arial;
 }
 #conference-header-line-one{
 	position: absolute;
@@ -84,6 +83,7 @@ body {
 .track {
 	width: 41.55%;
 	padding: 5px 0 0 10px;
+	/*font-size: 11px;*/
 	background: #cacccb;
 	height: 60px;
 	margin: 5px 0 0px 0;
@@ -119,6 +119,19 @@ body {
 .bordered-line {
 	margin: 10px 0 5px 30px;
 }
+.legend{
+	text-align: center;
+	float: left;
+	margin: 10px;
+	width: 170px;
+	height: 40px;
+}
+#legend-yellow{background-color: #fff100}
+#legend-purple{background-color: #fff100}
+#legend-blue{background-color: #fff100}
+#legend-green{background-color: #0a8941}
+#legend-orange{background-color: #d81f27}
+#legend-grey{background-color: #fff100}
 
 p.speech
 {
