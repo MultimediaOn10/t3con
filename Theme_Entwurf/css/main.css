@@ -1,0 +1,188 @@
+/*Typo3 Fonttype*/
+@font-face { font-family: Share;  src: url('../font/Share-TTF/Share-Regular.ttf'); } 
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker'), local('PermanentMarker'), url(http://themes.googleusercontent.com/static/fonts/permanentmarker/v2/9vYsg5VgPHKK8SXYbf3sMupm9E4gBdgiUiSJePew_SQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Rock Salt';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rock Salt'), local('RockSalt'), url(http://themes.googleusercontent.com/static/fonts/rocksalt/v3/Q94aHXFHGip10K5uxi1jOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+body {
+	background: #ffffff url('../img/hintergrund_kachel.png');
+	font-family: arial;
+}
+
+
+.left-floating {
+	float: left;
+}
+
+.right-floating {
+	float: right;
+}
+
+.heading {
+	height: 100px;
+
+}
+
+.daytext {
+	color: #ffffff;
+	font-family: Share, Arial;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 70px 0px 0px 0px;
+}
+
+.font2 {
+	font-family: Permanent Marker;
+	color: #ffffff;
+	
+	font-size: 30px;
+}
+
+.font3 {
+	font-family: Rock Salt;
+	color: #ffffff;
+	
+	font-size: 30px;
+}
+
+.logo {
+	height: 100px;
+}
+
+.sidebar {
+	height: 500px;
+}
+
+.center-content {
+	height: 100%;
+}
+
+.content-heading {
+	background: #757776;
+}
+
+.heading-text {
+	padding: 5px 10px 5px 10px;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.track {
+	width: 41.55%;
+	padding: 0 0 0 10px;
+	font-size: 11px;
+	background: #cacccb;
+	height: 55px;
+	margin: 5px 0 0px 0;
+}
+
+.middle-field {
+	width: 8%;
+	font-size: 11px;
+	background: #e98733;
+	height: 60px;
+	text-align: center;
+	margin: 0 5px 0 5px;
+}
+
+.first-field {
+	margin-top: 5px;
+	height: 55px !important;
+}
+
+.green-track {
+	border-left: 10px solid #0a8941;
+}
+
+.yellow-track {
+	border-left: 10px solid #fff100;
+}
+
+.red-track {
+	border-left: 10px solid #d81f27;
+}
+
+.bordered-line {
+	margin: 10px 0 5px 30px;
+}
+
+p.speech
+{
+	position: relative;
+	width: 180px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	background-color: #fff;
+	border: 8px solid #fff;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+}
+
+p.speech:before
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -39px;
+	top: 20px;
+	border: 16px solid;
+	border-color: #fff transparent transparent #fff;
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);
+}
+
+
+.bubble
+{
+  position:relative;
+  background: #ffffff;
+  float: left;     /* because the image at left */
+}
+.bubbleborder
+{
+  position:absolute;
+  top:0;
+  left:0;
+  color: #ffffff;
+}
+.bubbletext
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:190px;
+  height:170px;
+  padding:80px 16px 16px 16px;
+  text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
