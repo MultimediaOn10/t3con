@@ -86,7 +86,7 @@ body {
 	padding: 5px 0 0 5px;
 	/*font-size: 11px;*/
 	background: #cacccb;
-	height: 55px;
+	height: 60px;
 	margin: 5px 0 0px 0;
 	cursor: pointer;
 }
@@ -95,14 +95,15 @@ body {
 	width: 8%;
 	font-size: 11px;
 	background: #e98733;
-	height: 60px;
+	height: 65px;
 	text-align: center;
-	margin: 0 5px 0 5px;
+	margin: 5px 5px 0 5px;
 }
 
 .first-field {
 	margin-top: 5px;
-	height: 55px !important;
+	height: 65px !important;
+
 }
 
 .green-track {

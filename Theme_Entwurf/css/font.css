@@ -4,12 +4,12 @@
 }
 .track-title{
 	font-size: 13px;
-	font-style: 
+	height: 30px;
 }
 .track-speaker{
 	font-weight: lighter;
 	font-size: 10px;
 	float: right;
 	padding-bottom: 3px;
-	padding-right: 3px;
+	padding-right: 5px;
 }
