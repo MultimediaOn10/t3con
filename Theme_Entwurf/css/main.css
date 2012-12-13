@@ -102,6 +102,7 @@ body {
 	background: #cacccb;
 	height: 55px;
 	margin: 5px 0 0px 0;
+	cursor: pointer;
 }
 
 .middle-field {
