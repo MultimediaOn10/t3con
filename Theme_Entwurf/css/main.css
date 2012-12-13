@@ -57,6 +57,9 @@ body {
 .logo {
 	height: 100px;
 }
+.logo img{
+	height: 60px;
+}
 
 .sidebar {
 	height: 500px;
