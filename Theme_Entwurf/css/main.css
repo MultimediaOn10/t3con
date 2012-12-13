@@ -84,7 +84,7 @@ body {
 .track {
 	width: 41.9%;
 	padding: 5px 0 0 5px;
-	/*font-size: 11px;*/
+	padding: 5px 0 0 10px;
 	background: #cacccb;
 	height: 60px;
 	margin: 5px 0 0px 0;
