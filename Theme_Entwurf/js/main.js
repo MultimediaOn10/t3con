@@ -33,9 +33,9 @@ $(document).ready(function() {
     ctx.beginPath();
 
     /*Creates Arrow*/
-    ctx.moveTo(x+190, y);
-    ctx.lineTo(x+220/2, y-10);
-    ctx.lineTo(x+radius * 2, y);
+    ctx.moveTo(x+185, y);
+    ctx.lineTo(x+385/2, y-11);
+    ctx.lineTo(x+85 * 2, y);
     ctx.lineTo(r-radius, y);
 
     /*Creates Bubble*/
@@ -53,6 +53,7 @@ $(document).ready(function() {
   /*Generating the bubbles*/
   function dispQuote() 
   {
+    console.log($(".bubbletext").height());
     var canvas = document.getElementById('canvas1');
     var ctx = canvas.getContext('2d'); 
     drawBubble_left(ctx, 10,60,220, 220, 20);
@@ -79,4 +80,6 @@ $(document).ready(function() {
   $(".track").mouseleave(function(){
     $(this).css('background', '#cacccb');
   });
+
+      console.log($(".bubbletext").height());
 });
