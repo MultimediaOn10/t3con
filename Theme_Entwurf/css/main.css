@@ -69,13 +69,21 @@ body {
 .content-heading {
 	background: #757776;
 }
-#conference-header{
+#conference-header-line-one{
+	position: absolute;
+	font-family: Share, Arial;
+	color: #ffffff;
+	font-size: 60px;
+	left: 50px;
+	top: 60px;
+}
+#conference-header-line-two{
 	position: absolute;
 	font-family: Permanent Marker;
 	color: #ffffff;
-	font-size: 50px;
-	left: 50px;
-	top: 70px;
+	font-size: 80px;
+	left: 70px;
+	top: 110px;
 }
 
 .heading-text {
