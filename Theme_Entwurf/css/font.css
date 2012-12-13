@@ -1,3 +1,19 @@
+/*Typo3 Fonttype*/
+@font-face { font-family: Share;  src: url('../font/Share-TTF/Share-Regular.ttf'); } 
+
+@font-face { font-family: ShareBold;  src: url('../font/Share-TTF/Share-Bold.ttf'); } 
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker'), local('PermanentMarker'), url(http://themes.googleusercontent.com/static/fonts/permanentmarker/v2/9vYsg5VgPHKK8SXYbf3sMupm9E4gBdgiUiSJePew_SQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Rock Salt';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rock Salt'), local('RockSalt'), url(http://themes.googleusercontent.com/static/fonts/rocksalt/v3/Q94aHXFHGip10K5uxi1jOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
 .track{
 	font-family: Helvetica;
 	
@@ -12,4 +28,8 @@
 	float: right;
 	padding-bottom: 3px;
 	padding-right: 5px;
+}
+.middle-field{
+	font-family: ShareBold;
+	font-size: 12px;
 }
