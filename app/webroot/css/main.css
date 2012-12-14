@@ -1,0 +1,214 @@
+/*Farbwerte
+--------------------------------------------------------------------------------------------------*/
+	@purple: #856AA2;
+	@blue: #265D9C;
+	@red: #C13829;
+	@orange: #EC9A43;
+	@yellow: #F4CC3E;
+	@green: #6F9A37;
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/*Typo3 Fonttype*/
+@font-face { font-family: Share;  src: url('../font/Share-TTF/Share-Regular.ttf'); } 
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker'), local('PermanentMarker'), url(http://themes.googleusercontent.com/static/fonts/permanentmarker/v2/9vYsg5VgPHKK8SXYbf3sMupm9E4gBdgiUiSJePew_SQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Rock Salt';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rock Salt'), local('RockSalt'), url(http://themes.googleusercontent.com/static/fonts/rocksalt/v3/Q94aHXFHGip10K5uxi1jOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+
+
+
+body {
+	background: #ffffff url('../img/hintergrund_kachel.png');
+	font-family: arial;
+}
+
+
+.left-floating {
+	float: left;
+}
+
+.right-floating {
+	float: right;
+}
+
+.heading {
+	height: 100px;
+}
+
+.daytext {
+	color: #ffffff;
+	font-family: Share, Arial;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 0px 0px 0px 29px;
+	padding: 50px 0 0 0;
+	height: 30px;
+}
+
+.logo img{
+	height: 60px;
+}
+
+.sidebar {
+	height: 500px;
+}
+
+.center-content {
+	height: 100%;
+}
+
+.content-heading {
+	background: #757776;
+}
+
+#conference-header-line-one{
+	position: absolute;
+	font-family: Share, Arial;
+	color: #ffffff;
+	font-size: 60px;
+	left: 50px;
+	top: 60px;
+}
+
+#conference-header-line-two{
+	position: absolute;
+	font-family: Permanent Marker;
+	color: #e98733;
+	font-size: 80px;
+	left: 70px;
+	top: 110px;
+}
+
+.heading-text {
+	padding: 5px 10px 5px 10px;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.track {
+	width: 41.55%;
+	padding: 5px 0 0 10px;
+	/*font-size: 11px;*/
+	background: #cacccb;
+	height: 60px;
+	margin: 5px 0 0px 0;
+	cursor: pointer;
+}
+
+.middle-field {
+	width: 8%;
+	background: #e98733;
+	height: 65px;
+	text-align: center;
+	margin: 5px 5px 0 5px;
+}
+
+.first-field {
+	margin-top: 5px;
+	height: 65px !important;
+}
+
+.green-track {
+	border-left: 10px solid #0a8941;
+}
+
+.yellow-track {
+	border-left: 10px solid #fff100; 
+}
+
+.red-track {
+	border-left: 10px solid #d81f27;
+}
+
+.bordered-line {
+	margin: 10px 0 5px 30px;
+}
+
+.legend {
+	text-align: center;
+	float: left;
+	margin: 10px;
+	width: 170px;
+	height: 40px;
+}
+
+#legend-yellow{background-color: #856AA2}
+#legend-purple{background-color: #265D9C}
+#legend-blue{background-color: #C13829}
+#legend-green{background-color: #EC9A43}
+#legend-orange{background-color: #F4CC3E}
+#legend-grey{background-color: #6F9A37}
+
+
+/*****************************************/
+/**********  The Bubbles  ***************/
+/*****************************************/
+
+.bubble {
+  position:relative;
+  background: #ffffff;
+  float: left;     
+}
+
+.bubble h3 {
+	line-height: 1.5em;
+	font-size: 18px;
+	font-family: Share;
+	color: #fff;
+	margin-bottom: 0px;
+}
+
+.speaker-name {
+	color: #fff;
+	font-style: italic;
+	font-size: 11px;
+	text-align: left;
+	margin: 0 0 10px 15px;
+}
+
+.bubbleborder {
+  position:absolute;
+  top:0;
+  left:0;
+  color: #ffffff;
+}
+
+.bubbletext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding: 60px 10px 0px 10px;
+  text-align: center;
+}
+
+.bubble-content {
+	background: #ffffff;
+	color: #000;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
