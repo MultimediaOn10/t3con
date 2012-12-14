@@ -50,6 +50,13 @@
 	color: #fff;
 	line-height: 1.2em;
 }
+.bubble-content p{
+	font-size: 10px;
+	font-family: Helvetica,Arial;
+	line-height: 1.2em;
+	text-align: left;
+	margin-left: 5px;
+}
 .speaker-name{
 	color: #fff;
 	/*font-style: italic;*/
