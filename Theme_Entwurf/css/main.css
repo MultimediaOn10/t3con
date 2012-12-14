@@ -104,6 +104,7 @@ body {
 	-moz-transition: background 0.5s; /* Firefox 4 */
 	-webkit-transition: background 0.5s; /* Safari and Chrome */
 	-o-transition: background 0.5s; /* Opera */
+	box-shadow:inset 4px 0px 4px #909190;
 }
 .keynote-track{
 	width: 98%;
@@ -169,13 +170,12 @@ body {
 .legend {
 	text-align: center;
 	float: left;
-	margin: 5px;
+	margin: 8px;
 	width: 170px;
 	height: 40px;
-	border: solid 2px #000;
-	-moz-box-shadow: 0 0 5px 5px #575756;
-	-webkit-box-shadow: 0 0 5px 5px#575756;
-	box-shadow: 0 0 5px 5px #575756;
+	-moz-box-shadow: 0 0 2px 2px #383838;
+	-webkit-box-shadow: 0 0 2px 2px#383838;
+	box-shadow: 0 0 2px 2px #383838;
 }
 
 #legend-yellow{background-color: #F4CC3E}
