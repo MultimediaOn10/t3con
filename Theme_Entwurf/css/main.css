@@ -119,16 +119,26 @@ body {
 }
 
 .green-track {
-	border-left: 10px solid #0a8941;
+	border-left: 10px solid #EC9A43;
 }
 
 .yellow-track {
-	border-left: 10px solid #fff100; 
+	border-left: 10px solid #856AA2; 
 }
 
-.red-track {
-	border-left: 10px solid #d81f27;
+.purple-track {
+	border-left: 10px solid #265D9C;
 }
+.blue-track {
+	border-left: 10px solid #C13829;
+}
+.orange-track {
+	border-left: 10px solid #F4CC3E;
+}
+.red-track {
+	border-left: 10px solid #6F9A37;
+}
+
 
 .bordered-line {
 	margin: 10px 0 5px 30px;
