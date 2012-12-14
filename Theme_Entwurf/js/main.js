@@ -1,6 +1,6 @@
 $(document).ready(function() {
-
-  /*Bubble whith an arrow that points to the left*/
+/******** Old Bubble **********/
+  /*Bubble whith an arrow that points to the left
   function drawBubble_left(ctx, x, y, w, h, radius)
   {
     var r = x + w;
@@ -22,14 +22,14 @@ $(document).ready(function() {
     ctx.quadraticCurveTo(x, y, x+radius, y);
 
     ctx.fill();
-  }
+  }*/
 
-  /*Bubble whith an arrow that points to the right*/
+  /*Bubble whith an arrow that points to the left*/
   function drawBubble_right(ctx, x, y, w, h, radius)
   {
     var r = x + w;
     var b = y + h;
-    ctx.fillStyle = "#0a8941"; 
+    ctx.fillStyle = "#6F9A37"; 
     ctx.beginPath();
 
     /*Creates Arrow*/
