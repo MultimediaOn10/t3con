@@ -74,5 +74,5 @@ $(document).ready(function() {
   });
 
   /* Placing Bubbles to the tracks */
-  $("#bubble-1").css('margin-top','45px');
+  $("#bubble-1").css('margin-top','113px');
 });

@@ -34,6 +34,10 @@
 	font-family: ShareBold;
 	font-size: 12px;
 }
+.keynote-time{
+	font-family: ShareBold;
+	font-size: 12px;
+}
 .content-heading{
 	font-family: Share,Arial;
 	font-size: 14px;
@@ -49,6 +53,13 @@
 	font-family: Share;
 	color: #fff;
 	line-height: 1.2em;
+}
+.bubble-content p{
+	font-size: 10px;
+	font-family: Helvetica,Arial;
+	line-height: 1.2em;
+	text-align: left;
+	margin-left: 5px;
 }
 .speaker-name{
 	color: #fff;
