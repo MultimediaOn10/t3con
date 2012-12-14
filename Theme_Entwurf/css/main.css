@@ -162,17 +162,10 @@ body {
 
 .bubble h3 {
 	line-height: 1.5em;
-	font-size: 18px;
-	font-family: Share;
-	color: #fff;
 	margin-bottom: 0px;
 }
 
 .speaker-name {
-	color: #fff;
-	font-style: italic;
-	font-size: 11px;
-	text-align: left;
 	margin: 0 0 10px 15px;
 }
 
