@@ -33,9 +33,9 @@ $(document).ready(function() {
     ctx.beginPath();
 
     /*Creates Arrow*/
-    ctx.moveTo(x+185, y);
-    ctx.lineTo(x+385/2, y-11);
-    ctx.lineTo(x+85 * 2, y);
+    ctx.moveTo(x, y+radius*3);
+    ctx.lineTo(x-11, y+radius*2);
+    ctx.lineTo(x * 2, y);
     ctx.lineTo(r-radius, y);
 
     /*Creates Bubble*/
