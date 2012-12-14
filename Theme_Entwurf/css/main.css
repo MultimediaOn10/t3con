@@ -47,6 +47,7 @@ body {
 
 .sidebar {
 	height: 500px;
+	margin: 0 10px 0 10px; /*Bootstrap Hack!*/
 }
 
 .center-content {
@@ -89,10 +90,10 @@ body {
 	height: 60px;
 	margin: 5px 0 0px 0;
 	cursor: pointer;
-	transition: background 1s;
-	-moz-transition: background 1s; /* Firefox 4 */
-	-webkit-transition: background 1s; /* Safari and Chrome */
-	-o-transition: background 1s; /* Opera */
+	transition: background 0.5s;
+	-moz-transition: background 0.5s; /* Firefox 4 */
+	-webkit-transition: background 0.5s; /* Safari and Chrome */
+	-o-transition: background 0.5s; /* Opera */
 }
 
 .middle-field {
@@ -182,11 +183,6 @@ body {
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
-
-
-
-
-
 
 
 

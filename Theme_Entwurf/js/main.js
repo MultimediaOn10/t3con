@@ -51,14 +51,6 @@ $(document).ready(function() {
   }
 
   /*Generating the bubbles*/
-  function dispQuote() 
-  {
-    console.log($(".bubbletext").height());
-    var canvas = document.getElementById('canvas1');
-    var ctx = canvas.getContext('2d'); 
-    drawBubble_left(ctx, 10,60,220, 220, 20);
-  }
-
   function dispQuote2() 
   {
     var canvas = document.getElementById('canvas2');
@@ -67,7 +59,6 @@ $(document).ready(function() {
   }
 
   function MasterFkt() {
-    dispQuote();
     dispQuote2();  
   }
 
@@ -75,13 +66,12 @@ $(document).ready(function() {
 
   /*Hover-Effect for Tracks*/
   $(".track").mouseenter(function(){
-    $(this).css('background', '#757776');
-    $(this).css('color', '#ffffff');
+    $(this).css('background', '#9d9f9e');
   });
   $(".track").mouseleave(function(){
     $(this).css('background', '#cacccb');
-    $(this).css('color', '#000000');
   });
 
-      console.log($(".bubbletext").height());
+  /* Placing Bubbles to the tracks */
+  $("#bubble-1").css('margin-top','45px');
 });
