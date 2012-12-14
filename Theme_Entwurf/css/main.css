@@ -202,8 +202,9 @@ body {
 }
 
 .button {
-	margin-top: 0px !important;
+	
 	text-align: center;
+	margin-left: 70px;
 	color:#FFFFFF;
 	width: 60px;
 	height: 25px;

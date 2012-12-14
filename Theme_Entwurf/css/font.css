@@ -60,6 +60,8 @@
 	line-height: 1.2em;
 	text-align: left;
 	margin-left: 5px;
+	padding: 5px 0px 5px 5px;
+	margin-bottom: 0px;
 }
 .speaker-name{
 	color: #fff;
