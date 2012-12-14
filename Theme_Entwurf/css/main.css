@@ -105,6 +105,19 @@ body {
 	-webkit-transition: background 0.5s; /* Safari and Chrome */
 	-o-transition: background 0.5s; /* Opera */
 }
+.keynote-track{
+	width: 98%;
+	padding: 5px 0 0 10px;
+	/*font-size: 11px;*/
+	background: #cacccb;
+	height: 60px;
+	margin: 5px 0 0px 0;
+	cursor: pointer;
+	transition: background 0.5s;
+	-moz-transition: background 0.5s; /* Firefox 4 */
+	-webkit-transition: background 0.5s; /* Safari and Chrome */
+	-o-transition: background 0.5s; /* Opera */
+}
 
 .middle-field {
 	width: 8%;
