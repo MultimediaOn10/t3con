@@ -107,7 +107,8 @@ body {
 	box-shadow:inset 4px 0px 4px #909190;
 }
 .keynote-track{
-	width: 98%;
+	float: right;
+	width: 89%;
 	padding: 5px 0 0 10px;
 	/*font-size: 11px;*/
 	background: #cacccb;
@@ -118,7 +119,24 @@ body {
 	-moz-transition: background 0.5s; /* Firefox 4 */
 	-webkit-transition: background 0.5s; /* Safari and Chrome */
 	-o-transition: background 0.5s; /* Opera */
+	box-shadow:inset 4px 0px 4px #909190;
 }
+.keynote-time{
+	float: left;
+	width: 8%;
+	height: 65px;
+	text-align: center;
+	margin: 5px 5px 0 0px;	
+	background: #ff7b00; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ff7b00 1%, #ffb36d 11%, #ff7c00 49%, #ff7f04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#ff7b00), color-stop(11%,#ffb36d), color-stop(49%,#ff7c00), color-stop(100%,#ff7f04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ff7b00 1%,#ffb36d 11%,#ff7c00 49%,#ff7f04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ff7b00 1%,#ffb36d 11%,#ff7c00 49%,#ff7f04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ff7b00 1%,#ffb36d 11%,#ff7c00 49%,#ff7f04 100%); /* IE10+ */
+	background: linear-gradient(to right,  #ff7b00 1%,#ffb36d 11%,#ff7c00 49%,#ff7f04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b00', endColorstr='#ff7f04',GradientType=1 ); /* IE6-9 */
+
+	}
 
 .middle-field {
 	width: 8%;
