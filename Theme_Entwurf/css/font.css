@@ -44,7 +44,16 @@
 .span7{
 	font-family: Share;
 }
-.bubbletext h3{
+.bubble h3{
+	font-size: 18px;
 	font-family: Share;
+	color: #fff;
 	line-height: 1.2em;
+}
+.speaker-name{
+	color: #fff;
+	/*font-style: italic;*/
+	font-weight: lighter;
+	font-size: 11px;
+	text-align: left;
 }
