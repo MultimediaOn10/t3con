@@ -76,9 +76,11 @@ $(document).ready(function() {
   /*Hover-Effect for Tracks*/
   $(".track").mouseenter(function(){
     $(this).css('background', '#757776');
+    $(this).css('color', '#ffffff');
   });
   $(".track").mouseleave(function(){
     $(this).css('background', '#cacccb');
+    $(this).css('color', '#000000');
   });
 
       console.log($(".bubbletext").height());
