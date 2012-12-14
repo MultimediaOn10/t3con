@@ -1,3 +1,13 @@
+
+/*--------------------------Farben----------------------*/
+purple: #856AA2;
+blue: #265D9C;
+red: #C13829;
+orange: #EC9A43;
+yellow: #F4CC3E;
+green: #6F9A37;
+
+
 /*Typo3 Fonttype*/
 @font-face { font-family: Share;  src: url('../font/Share-TTF/Share-Regular.ttf'); } 
 @font-face {
@@ -143,12 +153,13 @@ body {
 	height: 40px;
 }
 
-#legend-yellow{background-color: #fff100}
-#legend-purple{background-color: #fff100}
-#legend-blue{background-color: #fff100}
-#legend-green{background-color: #0a8941}
-#legend-orange{background-color: #d81f27}
-#legend-grey{background-color: #fff100}
+#legend-yellow{background-color: #F4CC3E}
+#legend-purple{background-color: #856AA2}
+#legend-blue{background-color: #265D9C}
+#legend-green{background-color: #6F9A37}
+#legend-orange{background-color: #EC9A43}
+#legend-red{background-color: #C13829}
+
 
 
 /*****************************************/
