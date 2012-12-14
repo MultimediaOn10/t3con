@@ -26,6 +26,8 @@ green: #6F9A37;
 body {
 	background: #ffffff url('../img/hintergrund_kachel.png');
 	font-family: arial;
+	box-shadow:inset 100px 100px 60px rgba(0,0,0,.4);
+
 }
 
 
@@ -173,9 +175,13 @@ body {
 	margin: 8px;
 	width: 170px;
 	height: 40px;
-	-moz-box-shadow: 0 0 2px 2px #383838;
-	-webkit-box-shadow: 0 0 2px 2px#383838;
-	box-shadow: 0 0 2px 2px #383838;
+border: 1px solid #c9cccb;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+
 }
 
 #legend-yellow{background-color: #F4CC3E}
