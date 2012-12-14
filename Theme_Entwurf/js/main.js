@@ -1,6 +1,6 @@
 $(document).ready(function() {
-
-  /*Bubble whith an arrow that points to the left*/
+/******** Old Bubble **********/
+  /*Bubble whith an arrow that points to the left
   function drawBubble_left(ctx, x, y, w, h, radius)
   {
     var r = x + w;
@@ -22,14 +22,14 @@ $(document).ready(function() {
     ctx.quadraticCurveTo(x, y, x+radius, y);
 
     ctx.fill();
-  }
+  }*/
 
-  /*Bubble whith an arrow that points to the right*/
+  /*Bubble whith an arrow that points to the left*/
   function drawBubble_right(ctx, x, y, w, h, radius)
   {
     var r = x + w;
     var b = y + h;
-    ctx.fillStyle = "#0a8941"; 
+    ctx.fillStyle = "#6F9A37"; 
     ctx.beginPath();
 
     /*Creates Arrow*/
@@ -51,14 +51,6 @@ $(document).ready(function() {
   }
 
   /*Generating the bubbles*/
-  function dispQuote() 
-  {
-    console.log($(".bubbletext").height());
-    var canvas = document.getElementById('canvas1');
-    var ctx = canvas.getContext('2d'); 
-    drawBubble_left(ctx, 10,60,220, 220, 20);
-  }
-
   function dispQuote2() 
   {
     var canvas = document.getElementById('canvas2');
@@ -67,7 +59,6 @@ $(document).ready(function() {
   }
 
   function MasterFkt() {
-    dispQuote();
     dispQuote2();  
   }
 
@@ -75,11 +66,12 @@ $(document).ready(function() {
 
   /*Hover-Effect for Tracks*/
   $(".track").mouseenter(function(){
-    $(this).css('background', '#757776');
+    $(this).css('background', '#9d9f9e');
   });
   $(".track").mouseleave(function(){
     $(this).css('background', '#cacccb');
   });
 
-      console.log($(".bubbletext").height());
+  /* Placing Bubbles to the tracks */
+  $("#bubble-1").css('margin-top','45px');
 });
