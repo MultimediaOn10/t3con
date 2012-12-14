@@ -14,6 +14,7 @@
   font-weight: 400;
   src: local('Rock Salt'), local('RockSalt'), url(http://themes.googleusercontent.com/static/fonts/rocksalt/v3/Q94aHXFHGip10K5uxi1jOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
+
 .track{
 	font-family: Helvetica;
 	
@@ -45,4 +46,5 @@
 }
 .bubbletext h3{
 	font-family: Share;
+	line-height: 1.2em;
 }
