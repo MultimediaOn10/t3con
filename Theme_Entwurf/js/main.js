@@ -29,7 +29,7 @@ $(document).ready(function() {
   {
     var r = x + w;
     var b = y + h;
-    ctx.fillStyle = "#ffffff"; 
+    ctx.fillStyle = "#0a8941"; 
     ctx.beginPath();
 
     /*Creates Arrow*/
@@ -63,7 +63,7 @@ $(document).ready(function() {
   {
     var canvas = document.getElementById('canvas2');
     var ctx = canvas.getContext('2d'); 
-    drawBubble_right(ctx, 10,60,200, 90, 10);
+    drawBubble_right(ctx, 10,60,200, 300, 10);
   }
 
   function MasterFkt() {
