@@ -19,6 +19,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,28 +32,41 @@
         <![endif]-->
 
 	<div class="container">
-		<div id="conference-header">T3Con-Asia <br/> Cambodia 12</div>
+		<!--This is the header-->
 		<div class="row header">
 			<div class="span9 heading">
-				<div class="span3">blah</div>
-				<div class="span5 daytext">Friday</div>
+				<div id="conference-header-line-one">T3Con-Asia</div> 
+				<div id="conference-header-line-two">Cambodia 12</div>
 			</div>
 			<div class="span3 logo">
-				<a href="www.typo3.org"><img src="img/t3-logo.png"/></a>
+				<a href="http://www.typo3.org"><img src="img/t3-logo.png"/></a>
 			</div>
 		</div>
 		<div class="row">
+			<div class="span3">&nbsp;</div>
+			<div class="span8 daytext">Friday</div>
+		</div>
+
+		<!-- Here starts the main content-->
+		<div class="row">
+			<!--This is the left sidecontent (for the bubbles)-->
 			<div class="span3 sidebar">
-				<!-- <br/><br/><div class="font2">Friday</div><br/><br/><br/>
-				<div class="font3">Friday</div> -->
 				<div class="bubble">
 					<canvas id="canvas2" class="bubbleborder" width="240" height="200" >
 					</canvas>
 					<div class="bubbletext">
-						All generalizations are false, including this one. <br><i>Marc Twain.</i>
+						<h3>Der Titel des Vortrags</h3>
+						<div class="speaker-name">Liesa Burgey</div>
+						<div class="bubble-content">
+							<p> Lorem Ipsum dies ist ein Blindtext</p>
+							<p> Lorem Ipsum dies ist ein Blindtext</p>
+							<p> Lorem Ipsum dies ist ein Blindtext</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			
+			<!--Here is the centered content-->
 			<div class="span6 center-content">
 				<div class="row">
 					<div class="span6 content-heading">
@@ -67,26 +81,30 @@
 				<div class="row">
 					<div class="span6">
 						<div class="left-floating green-track track">
-							User experience as your core competence <br/> (Sam Ng)
+							<div class="track-title">User experience as your core competence</div> 
+							<div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field first-field">
 							08:00-<br/>09:15 
 						</div>
 						<div class="left-floating yellow-track track">
-							Some other presentation<br/>(Fabian Stein)
+							<div class="track-title">Some other presentation</div>
+							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="span6">
 						<div class="left-floating red-track track">
-							User experience as your core competence <br/> (Sam Ng)
+							<div class="track-title">User experience as your core competence</div> 
+							 <div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field">
 							08:00-<br/>09:15 
 						</div>
 						<div class="left-floating green-track track">
-							Some other presentation<br/>(Fabian Stein)
+							<div class="track-title">Some other presentation</div>
+							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
 					</div>
 				</div>
@@ -100,26 +118,30 @@
 				<div class="row">
 					<div class="span6">
 						<div class="left-floating green-track track">
-							User experience as your core competence <br/> (Sam Ng)
+							<div class="track-title">User experience as your core competence</div> 
+							<div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field first-field">
 							08:00-<br/>09:15 
 						</div>
 						<div class="left-floating yellow-track track">
-							Some other presentation<br/>(Fabian Stein)
+							<div class="track-title">Some other presentation</div>
+							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="span6">
 						<div class="left-floating red-track track">
-							User experience as your core competence <br/> (Sam Ng)
+							<div class="track-title">User experience as your core competence</div> 
+							<div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field">
 							08:00-<br/>09:15 
 						</div>
 						<div class="left-floating green-track track">
-							Some other presentation<br/>(Fabian Stein)
+							<div class="track-title">Some other presentation</div>
+							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
 					</div>
 				</div>
@@ -133,46 +155,62 @@
 				<div class="row">
 					<div class="span6">
 						<div class="left-floating green-track track">
-							User experience as your core competence <br/> (Sam Ng)
+							<div class="track-title">User experience as your core competence</div> 
+							<div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field first-field">
 							08:00-<br/>09:15 
 						</div>
 						<div class="left-floating yellow-track track">
-							Some other presentation<br/>(Fabian Stein)
+							<div class="track-title">Some other presentation</div>
+							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="span6">
 						<div class="left-floating red-track track">
-							User experience as your core competence <br/> (Sam Ng)
+							<div class="track-title">User experience as your core competence </div>
+							<div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field">
 							08:00-<br/>09:15 
 						</div>
 						<div class="left-floating green-track track">
-							Some other presentation<br/>(Fabian Stein)
+							<div class="track-title">Some other presentation</div>
+							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="span6">
 						<div class="left-floating red-track track">
-							User experience as your core competence <br/> (Sam Ng)
+							<div class="track-title">User experience as your core competence</div>
+							<div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field">
 							08:00-<br/>09:15 
 						</div>
 						<div class="left-floating green-track track">
-							Some other presentation<br/>(Fabian Stein)
+							<div class="track-title">Some other presentation</div>
+							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span6">
+						<div class="legend" id="legend-yellow">Business and <br/>Best Practices</div>
+						<div class="legend" id="legend-purple">Mobile Development</div>
+						<div class="legend" id="legend-blue">TYPO3 Enterprise CMS</div>
+						<div class="legend" id="legend-green">FLOW3 PHP <br/>Framework</div>
+						<div class="legend" id="legend-orange">Design and UX</div>
+						<div class="legend" id="legend-grey">Community / General</div>
 					</div>
 				</div>
 			</div>
-			<div class="span3 sidebar">
-				<!-- old Bubble  <p class="speech right-floating">SitePoint Rocks!</p><br/><br/><br/><br/><br/> -->
 
+			<!--This is the right sidecontent (for the bubbles)-->
+			<div class="span3 sidebar">
 				<div class="bubble">
 					<canvas id="canvas1" class="bubbleborder" width="240" height="290" >
 					</canvas>
@@ -187,8 +225,9 @@
 				</div>
 			</div>
 		</div>
-	</div>        
+	</div>  
 
+	
       	
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
