@@ -9,8 +9,8 @@ class IndexController extends AppController {
     public function index() {
         
         $this->loadModel("Conference");
-        $conference=$this->Conference->find("all");
-        print_r($conference);
+        $conference=$this->Conference->findById(1);
+      //  print_r($conference);
         $this->set('index', "Hallo");
         $this->set('con', $conference);
         
