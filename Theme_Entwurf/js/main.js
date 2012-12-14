@@ -1,7 +1,7 @@
 $(document).ready(function() {
-/******** Old Bubble **********/
-  /*Bubble whith an arrow that points to the left
-  function drawBubble_left(ctx, x, y, w, h, radius)
+
+  /*Bubble whith an arrow that points to the  right */
+  function drawBubble_right(ctx, x, y, w, h, radius)
   {
     var r = x + w;
     var b = y + h;
@@ -22,10 +22,10 @@ $(document).ready(function() {
     ctx.quadraticCurveTo(x, y, x+radius, y);
 
     ctx.fill();
-  }*/
+  }
 
   /*Bubble whith an arrow that points to the left*/
-  function drawBubble_right(ctx, x, y, w, h, radius)
+  function drawBubble_left(ctx, x, y, w, h, radius)
   {
     var r = x + w;
     var b = y + h;
@@ -51,15 +51,16 @@ $(document).ready(function() {
   }
 
   /*Generating the bubbles*/
-  function dispQuote2() 
+  function bubble1_drawing() 
   {
     var canvas = document.getElementById('canvas2');
     var ctx = canvas.getContext('2d'); 
-    drawBubble_right(ctx, 10,60,200, 300, 10);
+    drawBubble_left(ctx, 10,60,200, 300, 10);
   }
 
+  /* Master Function for the bubbles*/
   function MasterFkt() {
-    dispQuote2();  
+    bubble1_drawing();  
   }
 
   window.onload=MasterFkt;
