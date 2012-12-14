@@ -26,7 +26,7 @@ green: #6F9A37;
 body {
 	background: #ffffff url('../img/hintergrund_kachel.png');
 	font-family: arial;
-	box-shadow:inset 100px 100px 60px rgba(0,0,0,.4);
+	box-shadow:inset 40px 100px 60px rgba(0,0,0,.4);
 
 }
 
@@ -193,13 +193,31 @@ body {
 	margin: 8px;
 	width: 170px;
 	height: 40px;
-border: 1px solid #c9cccb;
-border-radius: 2px;
--moz-border-radius: 2px;
--webkit-border-radius: 2px;
-box-shadow: 1px 2px 4px rgba(0,0,0,.4);
-box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+	border: 1px solid #c9cccb;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	box-shadow: 1px 2px 4px rgba(0,0,0,.4);
 
+}
+
+.button {
+	margin-top: 0px !important;
+	text-align: center;
+	color:#FFFFFF;
+	width: 60px;
+	height: 25px;
+	background: #feccb1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feccb1 0%, #ea5507 3%, #f17432 54%, #ea5507 70%, #f95700 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feccb1), color-stop(3%,#ea5507), color-stop(54%,#f17432), color-stop(70%,#ea5507), color-stop(98%,#f95700)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feccb1 0%,#ea5507 3%,#f17432 54%,#ea5507 70%,#f95700 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feccb1 0%,#ea5507 3%,#f17432 54%,#ea5507 70%,#f95700 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feccb1 0%,#ea5507 3%,#f17432 54%,#ea5507 70%,#f95700 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feccb1 0%,#ea5507 3%,#f17432 54%,#ea5507 70%,#f95700 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#f95700',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #c9cccb;
+	box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+	
 }
 
 #legend-yellow{background-color: #F4CC3E}
