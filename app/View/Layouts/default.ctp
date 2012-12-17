@@ -15,8 +15,6 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -27,13 +25,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>Typo3Con Cambodia</title>
-        <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="mydescription">
 	<?php
 		echo $this->Html->meta('icon');
-                echo $this->Html->css('main.css');
-                echo $this->Html->css('font.css');
-                echo $this->Html->css('bootstrap-responsive.min.css');
-                echo $this->Html->css('bootstrap.min.css');
+        echo $this->Html->css('main.css');
+        echo $this->Html->css('font.css');
+        echo $this->Html->css('bootstrap-responsive.min.css');
+        echo $this->Html->css('bootstrap.min.css');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

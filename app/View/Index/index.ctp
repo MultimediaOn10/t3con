@@ -1,5 +1,4 @@
 
- 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -24,19 +23,7 @@
 		<div class="row">
 			<!--This is the left sidecontent (for the bubbles)-->
 			<div class="span3 sidebar">
-				<div class="bubble">
-					<canvas id="canvas2" class="bubbleborder" width="240" height="200" >
-					</canvas>
-					<div class="bubbletext">
-						<h3>Der Titel des Vortrags</h3>
-						<div class="speaker-name">Liesa Burgey</div>
-						<div class="bubble-content">
-							<p> Lorem Ipsum dies ist ein Blindtext</p>
-							<p> Lorem Ipsum dies ist ein Blindtext</p>
-							<p> Lorem Ipsum dies ist ein Blindtext</p>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 			
 			<!--Here is the centered content-->
@@ -48,6 +35,17 @@
 						</div>
 						<div class="right-floating heading-text">
 							Technical Track
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span6">
+						<div class="keynote-time">
+							08:00-09:15
+						</div>
+						<div class="keynote-track red-track">
+							<div class="track-title">Keynote</div> 
+							<div class="track-speaker">(Kaspar Skorhoj)</div>
 						</div>
 					</div>
 				</div>
@@ -75,7 +73,7 @@
 						<div class="left-floating middle-field">
 							08:00-<br/>09:15 
 						</div>
-						<div class="left-floating green-track track">
+						<div class="left-floating green-track track" id="1">
 							<div class="track-title">Some other presentation</div>
 							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
@@ -142,7 +140,7 @@
 				</div>
 				<div class="row">
 					<div class="span6">
-						<div class="left-floating red-track track">
+						<div class="left-floating orange-track track">
 							<div class="track-title">User experience as your core competence </div>
 							<div class="track-speaker">(Sam Ng)</div>
 						</div>
@@ -157,14 +155,14 @@
 				</div>
 				<div class="row">
 					<div class="span6">
-						<div class="left-floating red-track track">
+						<div class="left-floating purple-track track">
 							<div class="track-title">User experience as your core competence</div>
 							<div class="track-speaker">(Sam Ng)</div>
 						</div>
 						<div class="left-floating middle-field">
 							08:00-<br/>09:15 
 						</div>
-						<div class="left-floating green-track track">
+						<div class="left-floating blue-track track">
 							<div class="track-title">Some other presentation</div>
 							<div class="track-speaker">(Fabian Stein)</div>
 						</div>
@@ -177,23 +175,24 @@
 						<div class="legend" id="legend-blue">TYPO3 Enterprise CMS</div>
 						<div class="legend" id="legend-green">FLOW3 PHP <br/>Framework</div>
 						<div class="legend" id="legend-orange">Design and UX</div>
-						<div class="legend" id="legend-grey">Community / General</div>
+						<div class="legend" id="legend-red">Community / General</div>
 					</div>
 				</div>
 			</div>
 
 			<!--This is the right sidecontent (for the bubbles)-->
 			<div class="span3 sidebar">
-				<div class="bubble">
-					<canvas id="canvas1" class="bubbleborder" width="240" height="290" >
+				<div class="bubble" id="bubble-1">
+					<canvas id="canvas2" class="bubbleborder" width="240" height="200" >
 					</canvas>
 					<div class="bubbletext">
 						<h3>Der Titel des Vortrags</h3>
-						<ul>
-							<li><a href="#">Videobeitrag zum Vortrag</a></li>
-							<li><a href="#">Foliensatz zum Download</a></li>
-							<li><a href="#">Über den Referenten</a></li>
-						</ul>
+						<div class="speaker-name">Liesa Burgey</div>
+						<div class="bubble-content">
+							<img src="youtube.png" class="bubble-picture"/>
+							<p class="bubble-text"> Dies ist ein Satz in welchem der Inhalt beschrieben ist.</p>
+						</div>
+						<div class="button"> Info »</div>
 					</div>
 				</div>
 			</div>
@@ -209,4 +208,3 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
-
