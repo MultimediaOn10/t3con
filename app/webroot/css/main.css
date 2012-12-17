@@ -30,6 +30,18 @@ body {
 
 }
 
+/****************************/
+/***  Bootstrap Hacks *******/
+/****************************/
+
+.container {
+	width: 1170px !important;
+}
+
+
+/****************************/
+/***  Globals         *******/
+/****************************/
 
 .left-floating {
 	float: left;
@@ -48,7 +60,7 @@ body {
 	font-family: Share, Arial;
 	font-weight: bold;
 	font-size: 30px;
-	margin: 0px 0px 0px 29px;
+	margin: 0px 0px 0px 30px !important;
 	padding: 50px 0 0 0;
 	height: 30px;
 }

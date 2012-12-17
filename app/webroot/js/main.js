@@ -53,9 +53,10 @@ $(document).ready(function() {
   /*Generating the bubbles*/
   function bubble1_drawing() 
   {
+    var content_height = $(".bubble-text").height();
     var canvas = document.getElementById('canvas2');
     var ctx = canvas.getContext('2d'); 
-    drawBubble_left(ctx, 10,60,200, 300, 10);
+    drawBubble_left(ctx, 10,60,200, content_height +65, 10);
   }
 
   /* Master Function for the bubbles*/
