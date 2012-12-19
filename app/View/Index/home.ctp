@@ -41,8 +41,7 @@
 
                                     <?php
                                 foreach($points as $value){
-                                   // echo ("<div class=\"row\">
-				//	<div class=\"span6\">");
+     
                                     
                                         if($value['programpoints']['topic_id']=="7"){
                                           echo("<div class=\"row\">"); 
@@ -55,16 +54,61 @@
                                            // echo ("<font color=\"#FF0000\">Pause</font>");
                                         }
                                         elseif($value['programpoints']['column']=="1"){
-                                            
-                                            echo ("<font color=\"#FF0000\">Vortrag ganz durchgehend</font>");
+                                            if(isset($value['referent2']['id'])){
+                                                
+                                                $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].", ".$value['referent2']['firstname']." ".$value['referent2']['lastname'].")";
+                                            }
+                                            else{
+                                                $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].")";
+                                            }
+                                               echo(" <div class=\"row\">");
+                                                   echo("<div class=\"span6\">");
+                                                            echo("<div class=\"keynote-time\">");
+                                                                echo(substr($value['programpoints']['start_time'],0,5)."-<br/>".substr($value['programpoints']['end_time'],0,5));
+                                                            echo("</div>");
+                                                           echo("<div class=\"keynote-track ".$value['topics']['color']."-track\">");
+                                                            echo("<div class=\"track-title\">".$value['programpoints']['title']."</div>");
+                                                            echo("<div class=\"track-speaker\">".$referent."</div>");
+                                                           echo("</div>
+                                                     </div>
+                                                </div>");
+                                           // echo ("<font color=\"#FF0000\">Vortrag ganz durchgehend</font>");
                                         }
                                         elseif($value['programpoints']['column']=="2" && $value['programpoints']['subcolumn']=="1"){
-                                            
-                                            echo ("<font color=\"#FF0000\">Vortrag linke Spalte</font>");
+                                            if(isset($value['referent2']['id'])){
+                                                
+                                                $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].", ".$value['referent2']['firstname']." ".$value['referent2']['lastname'].")";
+                                            }
+                                            else{
+                                                $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].")";
+                                            }
+                                           echo(" <div class=\"row\">
+                                                <div class=\"span6\">
+                                                    <div class=\"left-floating ".$value['topics']['color']."-track track\">
+							<div class=\"track-title\">".$value['programpoints']['title']."</div> 
+							<div class=\"track-speaker\">".$referent."</div>
+                                                    </div>
+						<div class=\"left-floating middle-field first-field\">
+							".substr($value['programpoints']['start_time'],0,5)."-<br/>".substr($value['programpoints']['end_time'],0,5)." 
+						</div>");
+                                          //  echo ("<font color=\"#FF0000\">Vortrag linke Spalte</font>");
                                         }
                                         elseif($value['programpoints']['column']=="2" && $value['programpoints']['subcolumn']=="2"){
+                                            if(isset($value['referent2']['id'])){
+                                                
+                                                $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].", ".$value['referent2']['firstname']." ".$value['referent2']['lastname'].")";
+                                            }
+                                            else{
+                                                $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].")";
+                                            }
                                             
-                                            echo ("<font color=\"#FF0000\">Vortrag rechte Spalte</font>");
+                                           echo(" <div class=\"left-floating ".$value['topics']['color']."-track track\">
+							<div class=\"track-title\">".$value['programpoints']['title']."</div>
+							<div class=\"track-speaker\">".$referent."</div>
+                                                    </div>
+                                                    </div>
+                                                    </div>");
+                                           // echo ("<font color=\"#FF0000\">Vortrag rechte Spalte</font>");
                                         }
                                   //  print_r($value);
                                     //exit;
