@@ -7,8 +7,8 @@
 		<!--This is the header-->
 		<div class="row header">
 			<div class="span9 heading">
-				<div id="conference-header-line-one">T3Con-Asia</div> 
-				<div id="conference-header-line-two">Cambodia 12</div>
+				<div id="conference-header-line-one"><?php echo($con['Conference']['title']); ?></div> 
+				<div id="conference-header-line-two"><?php echo($con['Conference']['subtitle']); ?></div>                             
 			</div>
 			<div class="span3 logo">
 				<a href="http://www.typo3.org"><img src="img/t3-logo.png"/></a>
