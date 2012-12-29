@@ -22,7 +22,7 @@ class IndexController extends AppController {
                 setcookie("T3con", "watched", time()+3600); 
                 $skip="watched";
             }
-            setcookie("T3con", "watched", time()-3600); 
+          //  setcookie("T3con", "watched", time()-3600); 
 
              $this->loadModel("Conference");
              $conference=$this->Conference->findById(1);
