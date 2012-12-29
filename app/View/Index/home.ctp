@@ -16,7 +16,18 @@
 		</div>
 		<div class="row">
 			<div class="span3">&nbsp;</div>
-			<div class="span8 daytext">Friday</div>
+			<div class="span8 daytext">
+                            <?php
+                                if ($day="Friday"){
+                                    echo("<a class=\"menu_active\" href=\"index?day=Friday&conference_id=".$con['Conference']['id']."\">Friday</a> / <a class=\"menu_passiv\" href=\"index?day=Saturday&conference_id=".$con['Conference']['id']."\">Saturday</a>");
+                                } 
+                                else{
+                                    echo("<a class=\"menu_passiv\" href=\"index?day=Friday&conference_id=".$con['Conference']['id']."\">Friday</a> / <a class=\"menu_active\" href=\"index?day=Saturday&conference_id=".$con['Conference']['id']."\">Saturday</a>");                                
+                                }
+                            ?>
+                            
+                        </div>
+                       
 		</div>
 
 		<!-- Here starts the main content-->
