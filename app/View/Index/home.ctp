@@ -2,7 +2,7 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <div class="intro-<?php echo($skip);?>"> Tier steht der Beschreibungstext falls das Intro abgebrochen wurde...</div>
+        <div class="intro-<?php echo($skip);?>"> Hier steht der Beschreibungstext falls das Intro abgebrochen wurde...</div>
 	<div class="container">         
 		<!--This is the header-->
 		<div class="row header">
