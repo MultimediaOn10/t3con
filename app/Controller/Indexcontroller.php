@@ -15,11 +15,11 @@ class IndexController extends AppController {
                $skip=$_COOKIE["T3con"];
            }
             elseif(isset($_POST['skip'])){
-                 setcookie("T3con", "skip", time()+3600);
+                 setcookie("T3con", "skip", time()+10000);
                  $skip="skip";
             }
             else{
-                setcookie("T3con", "watched", time()+3600); 
+                setcookie("T3con", "watched", time()+10000); 
                 $skip="watched";
             }
           //  setcookie("T3con", "watched", time()-3600); 
