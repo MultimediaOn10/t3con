@@ -53,11 +53,10 @@
                                     <?php
                                 foreach($points as $value){
      
-                                    
                                         if($value['programpoints']['topic_id']=="7"){
                                           echo("<div class=\"row\">"); 
                                              echo("<div class=\"span6 content-heading bordered-line\">");
-                                                    echo("<div class=\"left-floating heading-text\">");
+                                                    echo("<div class=\"left-floating heading-text\" id=\"".$value['programpoints']['id']."\">");
 							echo($value['programpoints']['title']);
                                                    echo(" </div>
                                                 </div>
@@ -77,7 +76,7 @@
                                                             echo("<div class=\"keynote-time\">");
                                                                 echo(substr($value['programpoints']['start_time'],0,5)."-<br/>".substr($value['programpoints']['end_time'],0,5));
                                                             echo("</div>");
-                                                           echo("<div class=\"keynote-track ".$value['topics']['color']."-track\">");
+                                                           echo("<div class=\"keynote-track ".$value['topics']['color']."-track\" id=\"".$value['programpoints']['id']."\">");
                                                             echo("<div class=\"track-title\">".$value['programpoints']['title']."</div>");
                                                             echo("<div class=\"track-speaker\">".$referent."</div>");
                                                            echo("</div>
@@ -95,7 +94,7 @@
                                             }
                                            echo(" <div class=\"row\">
                                                 <div class=\"span6\">
-                                                    <div class=\"left-floating ".$value['topics']['color']."-track track\">
+                                                    <div class=\"left-floating ".$value['topics']['color']."-track track\" id=\"".$value['programpoints']['id']."\">
 							<div class=\"track-title\">".$value['programpoints']['title']."</div> 
 							<div class=\"track-speaker\">".$referent."</div>
                                                     </div>
@@ -113,7 +112,7 @@
                                                 $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].")";
                                             }
                                             
-                                           echo(" <div class=\"left-floating ".$value['topics']['color']."-track track\">
+                                           echo(" <div class=\"left-floating ".$value['topics']['color']."-track track\" id=\"".$value['programpoints']['id']."\">
 							<div class=\"track-title\">".$value['programpoints']['title']."</div>
 							<div class=\"track-speaker\">".$referent."</div>
                                                     </div>
