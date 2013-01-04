@@ -75,5 +75,27 @@ $(document).ready(function() {
   });
 
   /* Placing Bubbles to the tracks */
-  $("#bubble-1").css('margin-top','110px');
+  $(".keynote-track").click(function(){
+    /* remove text from button and bubble to load in the new text*/
+    $(".button").empty();
+    $(".bubble-content").empty();
+
+    /* Add Animation to Bubble*/
+    $('#bubble-1').fadeIn('600', function() {
+        $(".bubble-content").animate({
+          left: '+=50',
+          height: 'toggle'
+          }, 1000, function() {
+              $(".bubble-content").text("Dies ist ein Satz in welchem der Inhalt beschrieben ist.");
+              $(".button").animate({
+              left: '+=50',
+              height: 'toggle'
+              }, 1000, function() {
+                  $(".button").text("Info »");
+              });
+          });
+    });
+    $("#bubble-1").css('margin-top','30px');
+  })
+
 });
