@@ -34,7 +34,18 @@
 		<div class="row">
 			<!--This is the left sidecontent (for the bubbles)-->
 			<div class="span3 sidebar">
-				
+				<div class="bubble left-floating bubble-left" id="bubble-2">
+          <canvas id="canvas1" class="bubbleborder" width="240" height="200" >
+          </canvas>
+          <div class="bubbletext bubbletext-left">
+            <h3 class="title title-left">Der Titel des Vortrags</h3>
+            <div class="speaker-name speaker-name-left">Liesa Burgey</div>
+            <div class="bubble-content bubble-content-left">
+              <p class="bubble-text bubble-text-left"> Dies ist ein Satz in welchem der Inhalt beschrieben ist.</p>
+            </div>
+            <div class="button button-left"> Info »</div>
+          </div>
+        </div>
 			</div>
 			
 			<!--Here is the centered content-->
@@ -147,17 +158,16 @@
 
 			<!--This is the right sidecontent (for the bubbles)-->
 			<div class="span3 sidebar">
-				<div class="bubble" id="bubble-1">
+				<div class="bubble left-floating bubble-right" id="bubble-1">
 					<canvas id="canvas2" class="bubbleborder" width="240" height="200" >
 					</canvas>
-					<div class="bubbletext">
+					<div class="bubbletext bubbletext-right">
 						<h3>Der Titel des Vortrags</h3>
-						<div class="speaker-name">Liesa Burgey</div>
-						<div class="bubble-content">
-							<img src="youtube.png" class="bubble-picture"/>
-							<p class="bubble-text"> Dies ist ein Satz in welchem der Inhalt beschrieben ist.</p>
+						<div class="speaker-name speaker-name-right">Liesa Burgey</div>
+						<div class="bubble-content bubble-content-right">
+							<p class="bubble-text bubble-text-right"> Dies ist ein Satz in welchem der Inhalt beschrieben ist.</p>
 						</div>
-						<div class="button"> Info »</div>
+						<div class="button button-right"> Info »</div>
 					</div>
 				</div>
 			</div>

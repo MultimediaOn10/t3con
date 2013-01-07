@@ -23,7 +23,18 @@
 		<div class="row">
 			<!--This is the left sidecontent (for the bubbles)-->
 			<div class="span3 sidebar">
-				
+				<div class="bubble_left" id="bubble-2">
+					<canvas id="canvas2" class="bubbleborder" width="240" height="200" >
+					</canvas>
+					<div class="bubbletext">
+						<h3 class="title-left">Der Titel des Vortrags</h3>
+						<div class="speaker-name-left">Liesa Burgey</div>
+						<div class="bubble-content-left">
+							<p class="bubble-text-left"> Dies ist ein Satz in welchem der Inhalt beschrieben ist.</p>
+						</div>
+						<div class="button-left"> Info »</div>
+					</div>
+				</div>
 			</div>
 			
 			<!--Here is the centered content-->

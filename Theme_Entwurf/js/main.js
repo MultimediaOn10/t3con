@@ -5,7 +5,7 @@ $(document).ready(function() {
   {
     var r = x + w;
     var b = y + h;
-    ctx.fillStyle = "#ffffff"; 
+    ctx.fillStyle = "#6F9A37"; 
     ctx.beginPath();
 
     ctx.moveTo(x+radius, y);
@@ -58,9 +58,18 @@ $(document).ready(function() {
     drawBubble_left(ctx, 10,60,200, 300, 10);
   }
 
+   function bubble2_drawing() 
+  {
+    var canvas = document.getElementById('canvas1');
+    var ctx = canvas.getContext('2d'); 
+    drawBubble_right(ctx, 10,60,200, 300, 10);
+  }
+
+
   /* Master Function for the bubbles*/
   function MasterFkt() {
-    bubble1_drawing();  
+    bubble1_drawing(); 
+    bubble2_drawing();  
   }
 
   window.onload=MasterFkt;
