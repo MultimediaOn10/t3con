@@ -75,7 +75,12 @@
                                            // echo ("<font color=\"#FF0000\">Pause</font>");
                                         }
                                         elseif($value['programpoints']['column']=="1"){
-                                            if(isset($value['referent2']['id'])){
+                                            
+                                            if(!isset($value['referent1']['id'])){
+                                                $referent="";
+                                                
+                                            }
+                                            elseif(isset($value['referent2']['id'])){
                                                 
                                                 $referent="(".$value['referent1']['firstname']." ".$value['referent1']['lastname'].", ".$value['referent2']['firstname']." ".$value['referent2']['lastname'].")";
                                             }

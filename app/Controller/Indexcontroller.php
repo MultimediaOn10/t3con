@@ -6,7 +6,6 @@ class IndexController extends AppController {
 
     
    
-   
     public function index() {
         if (isset($_COOKIE["T3con"]) || isset($_POST['skip'])){
             // $cookie_value=array('intro'=>"skipt", 'session_id'=>"xy");
