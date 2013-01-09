@@ -30,6 +30,7 @@ class IndexController extends AppController {
              if (isset($url_para['day'])){
                  $day=$url_para['day'];
              }
+             
              else{
                  $day="Friday";
              }
