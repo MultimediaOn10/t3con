@@ -56,7 +56,6 @@ $(document).ready(function() {
   function bubble1_drawing() 
   {
     var content_height = $(".bubble-text-right").height();
-    console.log($(".bubbletext-right").height());
     var canvas = document.getElementById('canvas2');
     var ctx = canvas.getContext('2d'); 
     drawBubble_right(ctx, 10,60,200, content_height +65, 10);
@@ -91,8 +90,8 @@ $(document).ready(function() {
   var short_description;
   var add_content;
 
-  /*Animate the right bubble*/  
-  function Animate_Bubble(){
+  /*Animate the right bubbles*/  
+  function Animate_Bubble_right(){
     /* remove text from button and bubble to load in the new text*/
     $(".button-right").empty();
     $(".bubble-content-right").empty();
@@ -101,11 +100,30 @@ $(document).ready(function() {
     $('#bubble-1').fadeIn('600', function() {
       $(".bubble-content-right").text(short_description);
         
-      $(".bubble-content-right").animate({ left: '+=50', height: 'toggle' }, 1000, function() {
+      $(".bubble-content-right").animate({ left: '+=50', height: 'show' }, 1000, function() {
         $(".bubble-content-right").css('color','#000000');
         /*Button Animation*/
-        $(".button-right").animate({ left: '+=50', height: 'toggle' }, 1000, function() {
+        $(".button-right").animate({ left: '+=50', height: 'show' }, 1000, function() {
           $(".button-right").text("Info »");
+        });
+      });
+    });
+  };
+
+    function Animate_Bubble_left(){
+    /* remove text from button and bubble to load in the new text*/
+    $(".button-left").empty();
+    $(".bubble-content-left").empty();
+
+    /* Add Animation to Bubble*/
+    $('#bubble-2').fadeIn('600', function() {
+      $(".bubble-content-left").text(short_description);
+        
+      $(".bubble-content-left").animate({ left: '+=50', height: 'show' }, 1000, function() {
+        $(".bubble-content-left").css('color','#000000');
+        /*Button Animation*/
+        $(".button-left").animate({ left: '+=50', height: 'show' }, 1000, function() {
+          $(".button-left").text("Info »");
         });
       });
     });
@@ -113,20 +131,67 @@ $(document).ready(function() {
 
   /*Additional Animation for info-button*/
   $(".button-right").click(function(){
-    $(".button-right").css("display","none")
+    $(".button-right").css("display","none");
     $(".bubble-content-right").append(add_content);
 
-    $(".additional-content-right").animate({ left: '+=50', height: 'toggle' }, 1000, function() {
-      $(".additional-content-right").css('color','#000000');
+    $(".additional-content-right").animate({ left: '+=50', height: 'show' }, 1000, function() {
+    $(".additional-content-right").css('color','#000000');
     });       
   });
 
+  /*Make the bubbles disappear*/
+  function disappear_bubbles(){
+    $("#bubble-1").fadeOut('slow', function() {
+      showOrHide = false;
+    });
+    $("#bubble-2").fadeOut('slow', function() {
+      showOrHide = false;
+    });
+  };
+
   /* Placing Bubbles to the tracks */
-  $(".keynote-track").click(function(){
+  $("#2").click(function(){
+    disappear_bubbles();
+    var trackID = $('#2').attr('id');
+    $.ajax({
+      async: false,
+      url: "../cakephp/app/webroot/php/Ajaxrequest.php",
+      //url: "../cakephp/app/Controller/AjaxrequestController.php",
+      data: { trackID:trackID, action: "getmycontent" },
+      type: "POST",
+      dataType: "json",
+      cache: false,
+      success: function (data, textStatus, XMLHttpRequest) {
+                console.log('success!');
+                for (var i = 0; i < data.items.length; i++) {
+                    /*var titel = data.items[i].titel;
+                    var farbe_banner = data.items[i].farbe_banner;
+                    var farbe_links = data.items[i].farbe_links;
+                    var farbe_rechts = data.items[i].farbe_rechts;
+                    var Contentanordnung  = data.items[i].Contentanordnung ;
+
+                    short_description = "Dies ist ein kurzer Text der den Inhalt der Veranstaltung beschreibt";
+                    add_content = "<div class='additional-content additional-content-right'>Hallo</div>";
+                    $('#banner').css('background-color', farbe_banner);
+                    $('#contentleft').css('background-color', farbe_links);
+                    $('#contentright').css('background-color', farbe_rechts);
+                    $('#column2').html('<div>' + Contentanordnung  + '</div>');*/
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log('autsch!');
+            }
+    });
+    $("#bubble-1").css('margin-top','30px');
+    Animate_Bubble_right();
+  });
+
+  $("#3").click(function(){
+      disappear_bubbles();
       short_description = "Dies ist ein kurzer Text der den Inhalt der Veranstaltung beschreibt";
       add_content = "<div class='additional-content additional-content-right'>Hallo</div>";
-      $("#bubble-1").css('margin-top','30px');
-      Animate_Bubble();
+      $("#bubble-2").css('margin-top','90px');
+      Animate_Bubble_left();
   });
 
 });
