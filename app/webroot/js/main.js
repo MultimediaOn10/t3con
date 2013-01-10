@@ -9,12 +9,13 @@ $(document).ready(function() {
     ctx.beginPath();
 
     /*Creates Arrow*/
-    ctx.moveTo(x, y+radius*3);
-    ctx.lineTo(x-11, y+radius*2);
-    ctx.lineTo(x * 2, y);
-    ctx.lineTo(r-radius, y);
+    ctx.moveTo(x+180+radius, y);
+    ctx.lineTo(x+191+radius * 2, y+20);
+    ctx.lineTo(x+190+radius/2, y+35);
+    ctx.lineTo(x+190+radius, y+10);
 
     /*Creates Bubble*/
+    ctx.lineTo(r-radius, y);
     ctx.quadraticCurveTo(r, y, r, y+radius);
     ctx.lineTo(r, y+h-radius);
     ctx.quadraticCurveTo(r, b, r-radius, b);
@@ -135,7 +136,15 @@ $(document).ready(function() {
     $(".bubble-content-right").append(add_content);
 
     $(".additional-content-right").animate({ left: '+=50', height: 'show' }, 1000, function() {
-    $(".additional-content-right").css('color','#000000');
+      $(".additional-content-right").css('color','#000000');
+    });       
+  });
+  $(".button-left").click(function(){
+    $(".button-left").css("display","none");
+    $(".bubble-content-left").append(add_content);
+
+    $(".additional-content-left").animate({ left: '+=50', height: 'show' }, 1000, function() {
+      $(".additional-content-left").css('color','#000000');
     });       
   });
 
@@ -153,6 +162,8 @@ $(document).ready(function() {
   $("#2").click(function(){
     disappear_bubbles();
     var trackID = $('#2').attr('id');
+    short_description = "Dies ist ein kurzer Text der den Inhalt der Veranstaltung beschreibt";
+    add_content = "<div class='additional-content additional-content-right'>Hallo</div>";
     $.ajax({
       async: false,
       url: "../cakephp/app/webroot/php/Ajaxrequest.php",
@@ -170,8 +181,7 @@ $(document).ready(function() {
                     var farbe_rechts = data.items[i].farbe_rechts;
                     var Contentanordnung  = data.items[i].Contentanordnung ;
 
-                    short_description = "Dies ist ein kurzer Text der den Inhalt der Veranstaltung beschreibt";
-                    add_content = "<div class='additional-content additional-content-right'>Hallo</div>";
+            
                     $('#banner').css('background-color', farbe_banner);
                     $('#contentleft').css('background-color', farbe_links);
                     $('#contentright').css('background-color', farbe_rechts);
@@ -189,7 +199,7 @@ $(document).ready(function() {
   $("#3").click(function(){
       disappear_bubbles();
       short_description = "Dies ist ein kurzer Text der den Inhalt der Veranstaltung beschreibt";
-      add_content = "<div class='additional-content additional-content-right'>Hallo</div>";
+      add_content = "<div class='additional-content additional-content-left'>Hallo</div>";
       $("#bubble-2").css('margin-top','90px');
       Animate_Bubble_left();
   });
